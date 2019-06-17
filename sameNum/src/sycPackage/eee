@@ -1,0 +1,21 @@
+package sameNum;
+
+public class ThisThread extends Thread{
+
+
+    @Override
+    public void run() {
+        System.out.println(this.isAlive());
+        super.run();
+        System.out.println(this.getName());
+
+    }
+
+
+    public static void main(String[] args) {
+        ThisThread t = new ThisThread();
+        Thread tt = new Thread(t);
+        tt.start();
+    }
+
+}
