@@ -12,7 +12,7 @@ public class SortNlogn {
         System.out.println(Arrays.toString(sorts));
 
     }
-//分治算法---归并排序   O(nlogn)
+//归并排序  分治算法  时间复杂度稳定为O(nlogn)  但是不是稳定的排序算法
     public static void merge_sort(int[] a,int b,int c){
         System.out.println(Arrays.toString(a)+"  " +b +"   "+c);
         if(b<c){
@@ -36,8 +36,8 @@ public class SortNlogn {
                 temp[k++]=a[j++];
             }
         }
-        while(i<=mid) temp[k++]=a[i++];//如果第一个序列未检测完，直接将后面所有元素加到合并的序列中
-        while(j<=right) temp[k++]=a[j++];//同上
+        while(i<=mid) temp[k++]=a[i++];//????????????δ?????????????????????????????????
+        while(j<=right) temp[k++]=a[j++];//???
 
         for(int ks=left;ks<=right;ks++){
             a[ks] = temp[ks];
