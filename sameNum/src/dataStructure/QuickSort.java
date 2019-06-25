@@ -1,12 +1,16 @@
 package dataStructure;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 //快速排序  最坏复杂度O(N²)，平均是O(nlogn) 稳定的算法 空间复杂度为O(1)
 public class QuickSort {
     public static void main(String[] args) {
         int [] sorts = {1,5,6,2,3,51,32,55,71,23,45};
         System.out.println(Arrays.toString(sorts));
+//        Arrays.sort();
+//        Collections.sort();  java中实现的排序算法的优化，timesort
     }
 
     public static void quickSort(int []a,int start,int end ){
